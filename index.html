@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funding Fridays — the^delta</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { border-radius:0 !important; box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Nunito Sans',-apple-system,sans-serif; background:#f5f5f5; color:#444; -webkit-font-smoothing:antialiased; }
+  a { text-decoration:none; }
+
+  /* NAV */
+  nav { background:#ffffff; border-bottom:1px solid #e0e0e0; padding:0 48px; height:64px; display:flex; align-items:center; justify-content:space-between; }
+  .nav-brand { font-size:18px; font-weight:900; color:#363d3f; letter-spacing:-.02em; }
+  .nav-brand span { color:#b21010; }
+  .nav-sub { font-size:11px; font-weight:700; color:#6e7475; letter-spacing:.1em; text-transform:uppercase; }
+
+  /* HERO */
+  .hero { background:#b21010; padding:48px 48px 40px; }
+  .hero-eyebrow { font-size:10px; font-weight:700; color:rgba(255,255,255,0.5); letter-spacing:.12em; text-transform:uppercase; margin-bottom:10px; }
+  .hero h1 { font-size:36px; font-weight:900; color:#ffffff; letter-spacing:-.02em; line-height:1.1; margin-bottom:10px; }
+  .hero p { font-size:13px; font-weight:400; color:rgba(255,255,255,0.6); line-height:1.7; max-width:520px; }
+
+  /* GRID */
+  .container { max-width:760px; margin:0 auto; padding:40px 24px 80px; }
+  .section-label { font-size:9px; font-weight:800; color:#b21010; letter-spacing:.12em; text-transform:uppercase; border-bottom:1.5px solid #b21010; padding-bottom:6px; margin-bottom:20px; }
+  .editions-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+
+  /* CARD */
+  .edition-card { background:#ffffff; border:1.5px solid #e0e0e0; padding:20px; display:flex; flex-direction:column; gap:6px; transition:border-color .15s, box-shadow .15s; }
+  .edition-card:hover { border-color:#b21010; box-shadow:0 4px 16px rgba(178,16,16,0.08); }
+  .card-edition { font-size:9px; font-weight:800; color:#b21010; letter-spacing:.08em; text-transform:uppercase; }
+  .card-date { font-size:14px; font-weight:700; color:#363d3f; }
+  .card-link { margin-top:8px; font-size:10px; font-weight:800; color:#b21010; letter-spacing:.04em; }
+
+  /* FOOTER */
+  footer { background:#363d3f; padding:24px 48px; }
+  footer p { font-size:11px; font-weight:500; color:rgba(255,255,255,0.3); }
+  footer span { color:#b21010; }
+
+  @media(max-width:600px) {
+    nav, .hero, footer { padding-left:20px; padding-right:20px; }
+    .hero h1 { font-size:26px; }
+    .editions-grid { grid-template-columns:1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">the<span>^</span>delta</span>
+  <span class="nav-sub">Funding Fridays</span>
+</nav>
+
+<div class="hero">
+  <p class="hero-eyebrow">Weekly opportunities digest</p>
+  <h1>Funding Fridays</h1>
+  <p>A curated weekly digest of grants, fellowships, and funding opportunities for organisations working across samaaj, sarkaar, and bazaar. Published every Friday.</p>
+</div>
+
+<div class="container">
+  <p class="section-label">⚡ &nbsp;latest editions</p>
+  <div class="editions-grid">
+
+    <a class="edition-card" href="funding_fridays_edition98.html">
+      <span class="card-edition">Edition 98</span>
+      <span class="card-date">9 October 2026</span>
+      <span class="card-link">view edition →</span>
+    </a>
+
+    <!-- Future editions go here — copy the block above and update the number and date -->
+
+  </div>
+</div>
+
+<footer>
+  <p>© AIC Ncore Developmental Impact Foundation &nbsp;·&nbsp; the<span>^</span>delta</p>
+</footer>
+
+</body>
+</html>
